@@ -1,0 +1,69 @@
+{
+  "expo": {
+    "name": "Medical AI Platform",
+    "slug": "medical-ai-platform",
+    "version": "1.0.1",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.medicalai.platform",
+      "buildNumber": "2",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to analyze medical images",
+        "NSPhotoLibraryUsageDescription": "This app accesses your photos to upload medical images",
+        "NSHealthShareUsageDescription": "This app needs access to your health data to track vitals",
+        "NSHealthUpdateUsageDescription": "This app needs to update your health data to track vitals"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.medicalai.platform",
+      "versionCode": 2,
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-camera",
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "deploymentTarget": "13.0"
+          }
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "your-project-id"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/your-project-id"
+    },
+    "privacy": "public",
+    "sdkVersion": "50.0.0"
+  }
+} 
